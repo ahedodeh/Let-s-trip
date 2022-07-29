@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> ice-mountain</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file cdn link  -->
+    <link rel="stylesheet" href="../css/ice-mountain.css">
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+
+<body style="height:700px">
+
+    <!-- header section starts  -->
+
+    <header class="header">
+
+        <a href="#" class="logo">
+            <img src="../images/logo.png" class="img-2">
+            <span class="p1">Let's trip</span>
+        </a>
+
+        <div class="icons">
+            <div class="fa fa-home" id="home-btn"></div>
+        </div>
+
+    </header>
+    <div class="ice-img">
+        <div id="scratch">
+        </div>
+        <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+            integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+        <script src="../js/wScratchPad.min.js"></script>
+
+        <script type="text/javascript">
+            $('#scratch').wScratchPad({
+                size: 50,          // The size of the brush/scratch.
+                bg: '../images/img2.jpg',  // Background (image path or hex color).
+                fg: '../images/img1.jpg',  // Foreground (image path or hex color).
+
+            });
+
+        </script>
+    </div>
+    <!-- <p class="ice-p">Ice <br> Mountain</p> -->
+
+    <div class="ice-p">
+        <div class="wavy">
+            <span style="--i:1;">I</span>
+            <span style="--i:2;">c</span>
+            <span style="--i:3;">e</span><br>
+            <span style="--i:5;">M</span>
+            <span style="--i:6;">o</span>
+            <span style="--i:7;">u</span>
+            <span style="--i:8;">t</span>
+            <span style="--i:9;">a</span>
+            <span style="--i:10;">i</span>
+            <span style="--i:11;">n</span>
+
+        </div>
+    </div>
+
+    <section class="Blogs">
+        <h1 class="heading"> our <span>Blogs</span> </h1>
+    </section>
+    <!-- header section ends -->
+
+    <div class="bb">
+
+        <div class="card">
+            <div class="circle" style="--clr:#F79F1F">
+                <img src="../images/ice-logo.png" class="logo">
+            </div>
+            <div class="content">
+                <h3>Bloge information</h3>
+                <p>We will climb the highest iceberg in Palestine at an altitude of 1000 km above the surface of the
+                    earth</p>
+                <h3>The Location</h3>
+                <i class="fas fa-map-marker-alt"></i><span> Ramallah</span>
+                <h3>The Date</h3>
+                <p> from 12/8/2022 to 15/8/2022</p>
+                <h3>Departure Time</h3>
+                <p>09:00 AM</p>
+                <h3>The Price</h3>
+                <p>100 $</p>
+                <a onclick="thanks()" style="cursor: pointer;">Book now</a>
+
+            </div>
+            <img src="../images/ice-1.png" class="product-img">
+        </div>
+    </div>
+    <!--thanks-->
+    <div class="thanks" id="thanks">
+        <div class="thank-card">
+            <h2>Thank You</h2>
+            <p>Have a nice trip</p>
+            <p>We hope that you will visit us at one of our branches to pay</p> <br><br>
+            <form action="">
+                <button class="btn-ok" onclick="ok()">Ok</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/script.js"></script>
+
+</body>
+
+</html>

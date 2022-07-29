@@ -1,0 +1,130 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --purple: #8953bc;
+}
+
+.sea-img {
+    border-radius: 70px;
+    border: 6px solid var(--orange);
+    position: relative;
+    width: 874px;
+    height: 492px;
+    background-image: url(../images/sky.jpg);
+    background-size: cover;
+    overflow: hidden;
+    top: 120px;
+    left: 5%;
+}
+
+.ocean {
+    width: 100%;
+    height: 220px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.water {
+    /* width: 100%; */
+    height: 100%;
+    position: absolute;
+    right: 0;
+    animation: water 5s linear infinite;
+}
+
+@keyframes water {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(1000px);
+    }
+}
+
+.boat {
+    width: 200px;
+    position: absolute;
+    bottom: 200px;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: boat 2s linear infinite;
+}
+
+.boat img {
+    width: 100%;
+    -webkit-box-reflect: below 0 linear-gradient(rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.5));
+}
+
+
+@keyframes boat {
+    0% {
+        transform: rotate(0deg)translateY(0);
+
+    }
+
+    25% {
+        transform: rotate(-1deg)translateY(-3px);
+    }
+
+    50% {
+        transform: rotate(0deg)translateY(-5px);
+    }
+
+    75% {
+        transform: rotate(1deg)translateY(-3px);
+    }
+
+    100% {
+        transform: rotate(1deg)translateY(0);
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+.ice-p {
+    font-family: "Brush Script MT";
+    color: var(--orange);
+    letter-spacing: 1px;
+    text-shadow: 0px 3px 2px var(--purple);
+    position: relative;
+    left: 80%;
+    top: -150px;
+}
+
+
+.wavy span {
+    display: inline-block;
+    font-size: 40px;
+    letter-spacing: 1px;
+    font-family: "Brush Script MT";
+    animation: texta 1s ease-in-out;
+    animation-delay: calc(0.1s*var(--i));
+}
+
+@keyframes texta {
+    0% {
+        transform: translateY(0px);
+    }
+
+    50% {
+        transform: translateY(-20px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
