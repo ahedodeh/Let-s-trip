@@ -1,0 +1,300 @@
+<!-- <?php
+session_start();
+//if(isset(!$_SESSION['userName'])){
+//    header("loc:log.php");
+//}
+//?> -->
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <title> Social Meadis</title>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'>
+    <link href='https://css.gg/bell.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href='https://css.gg/bookmark.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link href='https://css.gg/brush.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+
+    <!-- <body> <i class='fa fa-home'></i> </body> -->
+
+    <link href='https://css.gg/search.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+
+    <link rel="stylesheet" href="../css/social.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                Let's Trip Scoial Media
+            </h2>
+
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="search for creatprs">
+            </div>
+
+            <div class="create">
+                <lable for="create-post" class="btn btn-primary">log out</lable>
+                <div class="profile-photo">
+                    <img src="../images/profile-1.jfif" alt="">
+                </div>
+            </div>
+        </div>
+
+    </nav>
+    <!-----------main------------>
+    <main>
+
+        <div class="container">
+
+            <!--left-->
+            <div class="left">
+
+                <a href="" class="profile">
+
+                    <div class="profile-photo">
+
+                        <img src="../images/profile-1.jfif">
+
+                    </div>
+
+                    <div class="handle">
+
+                        <h4>Ahed Odeh</h4>
+
+                        <p class="text-muted">
+                            @dayi
+
+                        </p>
+
+                    </div>
+
+                </a>
+
+                <!--sidebar-->
+                <div class="sideBar">
+
+                    <a class="menu-item active" href="social.html">
+
+                        <span><i class='fa fa-home'></i></span>
+
+                        <h3>Home</h3>
+                    </a>
+
+                    <a class="menu-item" id="massages-notification">
+                        <span><i class="gg-bookmark"></i></span>
+                        <h3>Bookmark</h3>
+
+                    </a>
+                    <a class="menu-item " id="theme">
+                        <span>
+                            <i class="uil uil-palette"></i>
+                        </span>
+                        <h3>Theme</h3>
+                    </a>
+                </div>
+                <!--end of sidebar-->
+
+                <label for="create-post" class="btn btn-primary" id="create">Create post</label>
+            </div>
+
+            <!--middle-->
+            <div class="middle">
+
+                <div class="stories">
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="../images/profile-8.jpg">
+                        </div>
+                        <p class="name">Your Story</p>
+                    </div>
+                    <!-- <div class="story">
+                        <div class="profile-photo">
+                            <img src="explor-img/profile-9.jpg">
+                        </div>
+                        <p class="name">Nam joon</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="explor-img/profile-10.jpg">
+                        </div>
+                        <p class="name">Park Joon</p>
+
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="explor-img/profile-11.jpg">
+                        </div>
+                        <p class="name">Zaid Omari</p>
+
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="explor-img/profile-12.jpeg">
+                        </div>
+                        <p class="name">Salah Shehada</p>
+                    </div>
+                    <div class="story">
+                        <div class="profile-photo">
+                            <img src="explor-img/profile-13.jpg">
+                        </div>
+                        <p class="name">Kim Jung-hyun</p>
+                    </div> -->
+                </div>
+                <!-- <=========== end of stories ==========> -->
+
+                <form class="create-post" style="height: 0px;">
+
+                </form>
+
+
+                <div class="feeds">
+
+                    <div class="feed">
+                        <div class="head">
+                            <div class="user">
+                                <div class="profile-photo">
+                                    <img src="../images/profile-11.jpg">
+                                </div>
+                                <div class="ingo">
+                                    <h3>Rami Rose</h3>
+                                    <small>trip type , 15 mintutes ago</small>
+                                </div>
+                            </div>
+                            <span class="edit">
+                                <i class="uil uil-ellipsis-h"></i>
+                            </span>
+                        </div>
+
+                        <div class="photo">
+                            <img src="../images/feed-1.jfif">
+                        </div>
+                        <div class="action-button">
+                            <div class="interaction-buttons">
+                                <span><i class="uil uil-heart"></i></span>
+                                <span class="liked-by">100</span>
+                            </div>
+                            <div class="bookmark">
+                                <span><i class='uil uil-bookmark'></i></span>
+                            </div>
+                        </div>
+
+
+                        <div class="caption">
+                            <p style="color: black; font-weight: 700;">Jason Statham Lorem ipsum dolor sit amet
+                                consectetur adipisicing elit. Repudiandae sunt
+                                beatae rerum? <span class="harsh-tag">#lifestyle
+                                </span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--right-->
+            <div class="right" style="display: none;">
+                <div class="massages">
+                    <div class="heading">
+                        <h4>الرسائل</h4><i class="uil uil-edit"></i>
+                    </div>
+                    <div class="search-bar">
+                        <i class="uil uil-search"></i>
+                        <input type="search" placeholder="البحث في الرسائل" id="message-search">
+                    </div>
+                    <div class="category">
+                        <h6 class="active">المحادثات</h6>
+                        <h6 class="message-requests">طلبات المراسلة (2)</h6>
+                    </div>
+                    <div class="message">
+                        <div class="profile-photo">
+                            <img src="explor-img/profile-pic.jpeg">
+                        </div>
+                        <div class="message-body">
+                            <h5>رهف نصر الله</h5>
+                            <p class="text-muted">ي نص</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!--theme-->
+    <div class="customize-theme">
+        <div class="card">
+            <h2> Customize your view</h2>
+            <p class="text-muted">Manage your font size, color and background</p>
+            <div class="font-size">
+                <h4>Font Size </h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 "></span>
+                        <span class="font-size-3 active"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
+            </div>
+            <!-- -----------------primary colors ------------------- -->
+
+            <div class="color">
+                <h4>color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2 "></span>
+                    <span class="color-3 "></span>
+                    <span class="color-4 "></span>
+                    <span class="color-5 "></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--create post-->
+    <div class="creating-post">
+        <div class="card2">
+            <h2> Share your fun trip with us</h2>
+            <br><br>
+            <form action="">
+                <label for="" class="text-muted">choose the type of trip</label>
+                <select name="trip-type">
+                    <option value="1">Nothing</option>
+                    <option value="2">Guava</option>
+                    <option value="3">Lychee</option>
+                    <option value="4">Papaya</option>
+                </select>
+                <br><br>
+                <label for="userfiles">upload your photo</label>
+                <input type="file" name="userfiles" id="userfiles" accept="image/gif,image/jpeg,image/png"><br><br>
+                <label for="cap">write your caption</label><br>
+                <textarea name="cap" id="cap" placeholder="your caption" id="" cols="60" rows="2"></textarea><br><br>
+                <button class="btn-x"> cancle</button>
+                <button class="btn-post">post</button>
+
+            </form>
+
+        </div>
+    </div>
+
+
+    <script src="../js/social.js"></script>
+</body>
+
+</html>

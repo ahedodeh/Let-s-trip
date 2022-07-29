@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie-edge">
+   <title>Car</title>
+   <link rel="stylesheet" href="../css/first-Stylr.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+
+</head>
+
+<body onload="frames">
+
+   <div class="night">
+      <div class="surface">
+      </div>
+      <div class="car">
+         <img src="../images/Img_06.png">
+      </div>
+
+   </div>
+   <div class="statment">
+      <div class="wavy">
+         <span style="--i:1;">O</span>
+         <span style="--i:2;">n</span>
+         <span style="--i:3;">e</span>
+         <span style="--i:4;">&nbsp;</span>
+         <span style="--i:5;">W</span>
+         <span style="--i:6;">a</span>
+         <span style="--i:7;">y</span>
+         <span style="--i:8;">&nbsp;</span>
+         <span style="--i:9;">T</span>
+         <span style="--i:10;">o</span>
+         <span style="--i:11;">&nbsp;</span>
+         <span style="--i:12;">G</span>
+         <span style="--i:13;">e</span>
+         <span style="--i:14;">t</span>
+         <span style="--i:15;">&nbsp;</span><br><br>
+         <span style="--i:16;">T</span>
+         <span style="--i:17;">h</span>
+         <span style="--i:18;">e</span>
+         <span style="--i:19;">&nbsp;</span>
+         <span style="--i:20;">M</span>
+         <span style="--i:21;">o</span>
+         <span style="--i:22;">s</span>
+         <span style="--i:23;">t</span>
+         <span style="--i:24;">&nbsp;</span>
+         <span style="--i:25;">O</span>
+         <span style="--i:26;">u</span>
+         <span style="--i:27;">t</span>
+         <span style="--i:28;">&nbsp;</span><br><br>
+         <span style="--i:29;">O</span>
+         <span style="--i:30;">f</span>
+         <span style="--i:31;">&nbsp;</span>
+         <span style="--i:32;">L</span>
+         <span style="--i:33;">i</span>
+         <span style="--i:34;">f</span>
+         <span style="--i:35;">e</span>
+         <span style="--i:36;">&nbsp;</span>
+         <span style="--i:37;">I</span>
+         <span style="--i:38;">s</span>
+         <span style="--i:39;">&nbsp;</span>
+         <span style="--i:40;">T</span>
+         <span style="--i:41;">o</span>
+         <span style="--i:42;">&nbsp;</span><br><br>
+         <span style="--i:43;">L</span>
+         <span style="--i:44;">o</span>
+         <span style="--i:45;">o</span>
+         <span style="--i:46;">k</span>
+         <span style="--i:47;">&nbsp;</span>
+         <span style="--i:48;">U</span>
+         <span style="--i:49;">p</span>
+         <span style="--i:50;">o</span>
+         <span style="--i:51;">n</span>
+         <span style="--i:52;">&nbsp;</span>
+         <span style="--i:53;">I</span>
+         <span style="--i:54;">t</span>
+         <span style="--i:55;">&nbsp;</span>
+         <span style="--i:56;">I</span>
+         <span style="--i:57;">s</span>
+         <span style="--i:58;">&nbsp;</span><br><br>
+         <span style="--i:59;">A</span>
+         <span style="--i:60;">n</span>
+         <span style="--i:61;">&nbsp;</span>
+         <span style="--i:62;">A</span>
+         <span style="--i:63;">d</span>
+         <span style="--i:64;">v</span>
+         <span style="--i:65;">e</span>
+         <span style="--i:66;">n</span>
+         <span style="--i:67;">t</span>
+         <span style="--i:68;">u</span>
+         <span style="--i:69;">r</span>
+         <span style="--i:70;">e</span>
+         <span style="--i:71;">.</span>
+      </div>
+      <div class="all">
+      <div class="contan">
+         <div class="bar">
+            <div class="fill">
+            </div>
+         </div>
+         <div class="counter">0%
+         </div>
+      </div>
+      <button class="output">
+         <!-- <span class="fa fa-check"></span> -->
+         <a href="firstt.html" class="pp">Start</a>
+      </button>
+      </div>
+
+
+
+   </div>
+
+   <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+   <script src="../js/first.js">
+   </script>
+   <script type="text/javascript">
+      let contan = document.querySelector(".contan");
+      let output = document.querySelector(".output");
+      let fill = document.querySelector(".fill");
+      
+         var a = 0;
+         var run = setInterval(frames, 80);
+         function frames() {
+            a = a + 1;
+            if (a == 101) {
+               clearInterval(run);
+               contan.style.display = "none";
+               output.style.display = "block";
+            }
+            else {
+               var counter = document.querySelector(".counter");
+               counter.textContent = a + "%";
+               fill.style.width = a + "%";
+            }
+         }
+
+   
+   </script>
+</body>
+
+</html>

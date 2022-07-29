@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Signin&SignupForm</title>
+
+    <link rel="stylesheet" href="../css/login-Style.css" />
+</head>
+
+<body>
+
+    <section>
+        <div class="blob">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <g transform="translate(144.93557357788086, -5.320777893066406)">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: #8953bc;"></stop>
+                            <stop offset="100%" style="stop-color: #F79F1F;"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)">
+                        <animate attributeName="d" dur="7000ms" repeatCount="indefinite"
+                            values="M426,313.5Q425,377,372.5,422Q320,467,256,448Q192,429,146,394Q100,359,59,304.5Q18,250,43.5,184Q69,118,133.5,104Q198,90,251.5,85Q305,80,355.5,108Q406,136,416.5,193Q427,250,426,313.5Z;
+                            M428,307.5Q408,365,352.5,380Q297,395,239.5,426.5Q182,458,148,403.5Q114,349,70,299.5Q26,250,53.5,188.5Q81,127,139,106.5Q197,86,256.5,66.5Q316,47,355.5,96Q395,145,421.5,197.5Q448,250,428,307.5Z;
+                            M429.5,308Q409,366,365,416.5Q321,467,250.5,466Q180,465,134,416.5Q88,368,55.5,309Q23,250,59,193.5Q95,137,149,121.5Q203,106,263,65Q323,24,374.5,73Q426,122,438,186Q450,250,429.5,308Z;
+                            M441,310Q416,370,365,408Q314,446,254,434.5Q194,423,136.5,398.5Q79,374,44,312Q9,250,48.5,191Q88,132,143.5,113Q199,94,253,85Q307,76,353.5,108.5Q400,141,433,195.5Q466,250,441,310Z;
+                            M420,318Q437,386,373,408.5Q309,431,250.5,429.5Q192,428,137,400Q82,372,44,311Q6,250,58,199.5Q110,149,149,104.5Q188,60,257,38Q326,16,382,65Q438,114,420.5,182Q403,250,420,318Z;
+                            M429.5,323.5Q452,397,378.5,409Q305,421,246.5,431Q188,441,122,416Q56,391,36.5,320.5Q17,250,71,204.5Q125,159,161.5,124.5Q198,90,254.5,75.5Q311,61,354,102Q397,143,402,196.5Q407,250,429.5,323.5Z;
+                            M426,313.5Q425,377,372.5,422Q320,467,256,448Q192,429,146,394Q100,359,59,304.5Q18,250,43.5,184Q69,118,133.5,104Q198,90,251.5,85Q305,80,355.5,108Q406,136,416.5,193Q427,250,426,313.5Z">
+                        </animate>
+                    </path>
+                </g>
+            </svg>
+        </div>
+
+
+        <div class="blob2">
+            <svg viewBox="0 0 800 500" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink" width="100%" id="blobSvg">
+                <g transform="translate(144.93557357788086, -5.320777893066406)">
+                    <defs>
+                        <linearGradient id="gradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                            <stop offset="0%" style="stop-color: rgb(66, 36, 199);"></stop>
+                            <stop offset="100%" style="stop-color: rgb(239, 35, 253);"></stop>
+                        </linearGradient>
+                    </defs>
+                    <path fill="url(#gradient)">
+                        <animate attributeName="d" dur="7000ms" repeatCount="indefinite"
+                            values="  M429.5,308Q409,366,365,416.5Q321,467,250.5,466Q180,465,134,416.5Q88,368,55.5,309Q23,250,59,193.5Q95,137,149,121.5Q203,106,263,65Q323,24,374.5,73Q426,122,438,186Q450,250,429.5,308Z;
+                                    M441,310Q416,370,365,408Q314,446,254,434.5Q194,423,136.5,398.5Q79,374,44,312Q9,250,48.5,191Q88,132,143.5,113Q199,94,253,85Q307,76,353.5,108.5Q400,141,433,195.5Q466,250,441,310Z;
+                                    M420,318Q437,386,373,408.5Q309,431,250.5,429.5Q192,428,137,400Q82,372,44,311Q6,250,58,199.5Q110,149,149,104.5Q188,60,257,38Q326,16,382,65Q438,114,420.5,182Q403,250,420,318Z;
+                                    M426,313.5Q425,377,372.5,422Q320,467,256,448Q192,429,146,394Q100,359,59,304.5Q18,250,43.5,184Q69,118,133.5,104Q198,90,251.5,85Q305,80,355.5,108Q406,136,416.5,193Q427,250,426,313.5Z;
+                                    M428,307.5Q408,365,352.5,380Q297,395,239.5,426.5Q182,458,148,403.5Q114,349,70,299.5Q26,250,53.5,188.5Q81,127,139,106.5Q197,86,256.5,66.5Q316,47,355.5,96Q395,145,421.5,197.5Q448,250,428,307.5Z;
+                                    M429.5,323.5Q452,397,378.5,409Q305,421,246.5,431Q188,441,122,416Q56,391,36.5,320.5Q17,250,71,204.5Q125,159,161.5,124.5Q198,90,254.5,75.5Q311,61,354,102Q397,143,402,196.5Q407,250,429.5,323.5Z;
+                                    M426,313.5Q425,377,372.5,422Q320,467,256,448Q192,429,146,394Q100,359,59,304.5Q18,250,43.5,184Q69,118,133.5,104Q198,90,251.5,85Q305,80,355.5,108Q406,136,416.5,193Q427,250,426,313.5Z;
+                                    M429.5,308Q409,366,365,416.5Q321,467,250.5,466Q180,465,134,416.5Q88,368,55.5,309Q23,250,59,193.5Q95,137,149,121.5Q203,106,263,65Q323,24,374.5,73Q426,122,438,186Q450,250,429.5,308Z;">
+                        </animate>
+                    </path>
+                </g>
+            </svg>
+        </div>
+
+    </section>
+
+
+
+    <main>
+        <div class="box">
+            <div class="inner-box">
+                <div class="forms-wrap">
+                    <form action="log-in&sign-up.html" autocomplete="off" class="sign-in-form">
+                        <div class="logo">
+                            <img src="../images/logo-1.png" alt="easyclass"
+                                style="width: 150px; height:150px; position: relative; left: 40px;" />
+                        </div>
+
+                        <div class="heading">
+                            <h2>Welcome Back</h2>
+                            <h6>Not registred yet?</h6>
+                            <a href="#" class="toggle">Sign up</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+                            </div>
+
+                            <input type="submit" value="Sign In" class="sign-btn" />
+
+                            <p class="text">
+                                Forgotten your password or you login datails?
+                                <a href="#">Get help</a> signing in
+                            </p>
+                        </div>
+                    </form>
+
+                    <form action="index.html" autocomplete="off" class="sign-up-form">
+                        <div class="logo">
+                            <img src="../images/logo-1.png" alt="easyclass"
+                                style="width: 150px; height:150px; position: relative; left: 20px;" />
+                        </div>
+
+                        <div class="heading">
+                            <h2>Get Started</h2>
+                            <h6>Already have an account?</h6>
+                            <a href="#" class="toggle">Sign in</a>
+                        </div>
+
+                        <div class="actual-form">
+                            <div class="input-wrap">
+                                <input type="text" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Name</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="email" class="input-field" autocomplete="off" required />
+                                <label>Email</label>
+                            </div>
+
+                            <div class="input-wrap">
+                                <input type="password" minlength="4" class="input-field" autocomplete="off" required />
+                                <label>Password</label>
+
+                            </div>
+                           
+
+                            <input type="submit" value="Sign Up" class="sign-btn" />
+
+                            <p class="text">
+                                By signing up, I agree to the
+                                <a href="#">Terms of Services</a> and
+                                <a href="#">Privacy Policy</a>
+                            </p>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="carousel">
+                    <div class="images-wrapper">
+                        <img src="../images/hi.png" class="image img-1 show" />
+                        <img src="../images/image2.png" class="image img-2" alt="" />
+                        <img src="../images/image3.png" class="image img-3" alt="" />
+                    </div>
+
+                    <div class="text-slider">
+                        <div class="text-wrap">
+                            <div class="text-group">
+                                <h2>Live your own adventure</h2>
+                                <h2>Live your life</h2>
+                                <h2>Challenge your fear, fighting!</h2>
+                            </div>
+                        </div>
+
+                        <div class="bullets">
+                            <span class="active" data-value="1"></span>
+                            <span data-value="2"></span>
+                            <span data-value="3"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Javascript file -->
+
+    <script src="../js/logIn.js"></script>
+</body>
+
+</html>
