@@ -178,6 +178,8 @@ function f8() {
 
 
 
+
+
 function thanks() {
     document.get('thanks').style.display = "grid";
 }
@@ -185,3 +187,6 @@ function ok() {
     document.getElementById('thanks').style.display = "none";
 }
 
+function delt1() {
+    document.get('delete-1').style.display = "block";
+}

@@ -74,9 +74,11 @@
     color: white;
     background-color: #F79F1F;
 }
+
 #edit-profile:hover {
     box-shadow: 0px 0px 15px #F79F1F;
 }
+
 .info:hover {
     box-shadow: 0px 0px 60px #F79F1F;
 }
@@ -168,7 +170,29 @@
         transform: translateX(0);
     }
 }
-.all{
+
+.all {
     position: relative;
     top: -250px;
+}
+
+.delete {
+    width: fit-content;
+    height: fit-content;
+    padding: 7px;
+    font-size: 2rem;
+    border-radius: 50%;
+    color: #fff;
+    border: #fff solid 3px;
+    background: orange;
+    position: relative;
+    left: 135%;
+    top: -220px;
+    cursor: pointer;
+    z-index: 100;
+}
+
+.delete:hover {
+    background: rgb(255, 255, 255);
+    color: black;
 }
