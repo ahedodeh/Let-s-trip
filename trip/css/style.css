@@ -873,9 +873,7 @@ label:hover .flip-card {
     transform: rotateX(2deg);
 }
 
-input {
-    display: none;
-}
+
 
 :checked+.flip-card {
     transform: rotateX(180deg);
@@ -1119,4 +1117,8 @@ label:hover :checked+.flip-card {
     font-size: 20px;
     color: black;
     background-color: #aaa;
+}
+
+.services input{
+    display: none;
 }

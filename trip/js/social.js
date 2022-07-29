@@ -7,7 +7,6 @@ const create = document.querySelector('#create');
 const themeModal = document.querySelector('.customize-theme');
 const creatingPost = document.querySelector('.creating-post');
 
-
 const fontSize = document.querySelectorAll('.choose-size span');
 
 var root = document.querySelector(':root');
@@ -167,3 +166,9 @@ colorPalette.forEach(color => {
         root.style.setProperty('--primary-color-hue',primaryHue);
         })
 })
+
+
+function home() {
+    window.location.href = "firstt.html";
+
+}

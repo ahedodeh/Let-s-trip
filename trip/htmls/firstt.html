@@ -35,7 +35,9 @@
         <div class="icons">
             <div class="fas fa-globe" id="search-btn"></div>
             <div class="fas fa-moon" id="theme-btn"></div>
-            <div class="fas fa-user" id="login-btn"></div>
+            <!-- <div class="fas fa-globe" onclick="social()"></div>
+            <div class="fas fa-moon" id="theme-btn"></div> -->
+            <div class="fas fa-user" id="login-btn " onclick="profile()"> </div>
             <div class="fas fa-bars" id="menu-btn"></div>
         </div>
 
@@ -136,7 +138,8 @@
                     </a>
                 </nave>
                 <div class="container">
-                    <div onmouseover="f1();clickMountain()" onmouseleave="f2()" id="Mountain" class="panel active "
+                    <div onmouseover="f1();clickMountain()" onmouseleave="f2();leave()" id="Mountain"
+                        class="panel active "
                         style="background-image: url(../images/mountain.jpg) ;border-radius: 50px; background-size: cover;">
                         <div id="Mountain-d">
                             <p style="color: orange; text-align:center;  font-size: 20px;">It's time for adventure</p>
@@ -152,7 +155,7 @@
                         </a>
                     </div>
 
-                    <div onmouseover="f3();clickIc() " onmouseleave="f4()" class="panel active"
+                    <div onmouseover="f3();clickIc() " onmouseleave="f4();leave()" class="panel active"
                         style="background-image: url(../images/ice.jpg); background-size: cover;">
 
                         <div id="ice-d">
@@ -169,7 +172,7 @@
                         <!-- <a href="q2.html"></a> -->
                     </div>
 
-                    <div onmouseover="f5(),clickSea()" onmouseleave="f6()" class="panel active sea"
+                    <div onmouseover="f5(),clickSea()" onmouseleave="f6();leave()" class="panel active sea"
                         style="background-image: url(../images/sea.jpg); background-size: cover;">
 
 
@@ -185,7 +188,7 @@
                         <!-- <a href="q3.html"></a> -->
                     </div>
 
-                    <div onmouseover="f7();clickForest()" onmouseleave="f8()" class="panel active"
+                    <div onmouseover="f7();clickForest()" onmouseleave="f8();leave()" class="panel active"
                         style="background-image: url(../images/forest.jpg); background-size: cover;">
 
                         <div id="forest-d">
@@ -211,7 +214,7 @@
 
             <h1 class="heading"> our <span>services</span> </h1>
 
-            <div class="box-container" >
+            <div class="box-container">
                 <label class="la1">
                     <input type="checkbox" />
                     <div class="flip-card">
@@ -368,9 +371,10 @@
             <h1 class="heading"> <span>contact</span> us </h1>
 
             <form action="">
-                <input type="text" placeholder="name" data-aos="fade-up" style="z-index: 500;">
-                <input type="email" placeholder="email" data-aos="fade-up">
-
+                <div class="inputBox">
+                    <input type="text" placeholder="name" data-aos="fade-up">
+                    <input type="email" placeholder="email" data-aos="fade-up">
+                </div>
                 <textarea name="" placeholder="your message" id="" cols="30" rows="2" data-aos="fade-up"></textarea>
                 <input type="submit" value="send message" class="btn">
             </form>
@@ -391,10 +395,15 @@
                 <div class="box" data-aos="fade-up">
 
                     <h3>our branches</h3>
-                    <a href="#"><i class="fas fa-map-marker-alt"></i> Nablus </a>
-                    <a href="#"> <i class="fas fa-map-marker-alt"></i> Ramallah </a>
-                    <a href="#"> <i class="fas fa-map-marker-alt"></i> jenin </a>
-                    <a href="#"> <i class="fas fa-map-marker-alt"></i> jerusalem </a>
+                    <a target="_blank"
+                        href="https://www.google.com/maps/dir/32.1655424,35.2695652/%D9%86%D8%A7%D8%A8%D9%84%D8%B3%E2%80%AD%E2%80%AD/@32.2145891,35.2875193,12z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x151ce0f650425697:0x7f0ba930bd153d84!2m2!1d35.2621461!2d32.2226678!3e0"><i
+                            class="fas fa-map-marker-alt"></i> Nablus </a>
+                    <a href="https://www.google.com/maps/dir//%D8%B1%D8%A7%D9%85+%D8%A7%D9%84%D9%84%D9%87%E2%80%AD/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x1502d54cda2d58d1:0xbf6d4d17cc8b2c76!3e0?sa=X&ved=2ahUKEwjD4vukup75AhWW76QKHZJgCTkQ-A96BAgKEAw"
+                        target="_blank"> <i class="fas fa-map-marker-alt"></i> Ramallah </a>
+                    <a href="https://www.google.com/maps/dir//%D8%AC%D9%86%D9%8A%D9%86%E2%80%AD/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x151cfed5525459a7:0x8af2eaf8c123e9a4!3e0?sa=X&ved=2ahUKEwjW4Pavup75AhUBD-wKHaHECucQ-A96BAgDEAw"
+                        target="_blank"> <i class="fas fa-map-marker-alt"></i> jenin </a>
+                    <a href="https://www.google.com/maps/dir//%D8%A7%D9%84%D9%82%D8%AF%D8%B3%D8%8C+%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%E2%80%AD/data=!4m7!4m6!1m1!4e2!1m2!1m1!1s0x1502d7d634c1fc4b:0xd96f623e456ee1cb!3e0?sa=X&ved=2ahUKEwifldO7up75AhVG_KQKHeeZDj4Q-A96BAgJEAw"
+                        target="_blank"> <i class="fas fa-map-marker-alt"></i> jerusalem </a>
                 </div>
 
                 <div class="box" data-aos="fade-up">
@@ -408,8 +417,8 @@
 
                 <div class="box" data-aos="fade-up">
                     <h3>contact info</h3>
-                    <a href="#"> <i class="fas fa-phone"></i> +970-456-7890 </a>
-                    <a href="#"> <i class="fas fa-phone"></i> +972-222-3333 </a>
+                    <a> <i class="fas fa-phone"></i> +970-456-7890 </a>
+                    <a> <i class="fas fa-phone"></i> +972-222-3333 </a>
                 </div>
 
                 <div class="box" data-aos="fade-up">

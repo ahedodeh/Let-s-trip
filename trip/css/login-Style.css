@@ -29,7 +29,7 @@ main {
 .box {
     position: relative;
     width: 70%;
-    height: 650px;
+    height: 600px;
     background-color: rgba(245, 242, 229, 0.58);
     border-radius: 3.3rem;
     box-shadow: 0 60px 40px -30px rgba(0, 0, 0, 0.27);
@@ -72,6 +72,7 @@ form {
 
 form.sign-up-form {
     opacity: 0;
+  
     pointer-events: none;
 }
 
@@ -91,8 +92,12 @@ form.sign-up-form {
     letter-spacing: -0.5px;
     color: #151111;
 }
-
+.heading{
+    position: relative;
+        top: -40px;
+}
 .heading h2 {
+   
     font-size: 2.1rem;
     font-weight: 600;
     color: #151111;

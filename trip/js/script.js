@@ -54,6 +54,8 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
+
+
 const panels = document.querySelectorAll(".panel");
 
 panels.forEach((panel) => {
@@ -63,11 +65,30 @@ panels.forEach((panel) => {
     });
 });
 
+
 const removeActiveClasses = () => {
     panels.forEach((panel) => {
         panel.classList.remove("active");
     })
 }
+
+// -----------------------------------------------
+
+panels.forEach((panel) => {
+    panel.addEventListener("mouseleave", () => {
+        removeActiveClasses2();
+    });
+});
+
+
+const removeActiveClasses2 = () => {
+    panels.forEach((panel) => {
+        panel.classList.remove("active");
+    })
+}
+
+
+
 
 
 
@@ -131,6 +152,12 @@ function clickForest() {
     document.getElementById('ice-d').style.display = "none";
 
 }
+function leave() {
+    document.getElementById('forest-d').style.display = "none";
+    document.getElementById('Mountain-d').style.display = "none";
+    document.getElementById('sea-d').style.display = "none";
+    document.getElementById('ice-d').style.display = "none";
+}
 
 function rev() {
     document.getElementById('rev1').style.position = "relative";
@@ -175,11 +202,6 @@ function f7() {
 function f8() {
     document.getElementById('m4').style.display = "none";
 }
-
-
-
-
-
 function thanks() {
     document.get('thanks').style.display = "grid";
 }
@@ -190,3 +212,42 @@ function ok() {
 function delt1() {
     document.get('delete-1').style.display = "block";
 }
+
+///////////////////////////////////////////////////////// to open social media page
+function social() {
+
+    // flage
+    let f = false;
+    if (f == true) {
+        window.location.href = "sign.html";
+    }
+    else {
+        window.location.href = "social.html";
+
+    }
+
+}
+///////////////////////////////////////////////////////// to open profile page
+function profile() {
+
+    // flage
+    let f = false;
+    if (f == true) {
+        window.location.href = "sign.html";
+    }
+    else {
+        window.location.href = "profile.html";
+
+    }
+}
+function apperCardPhoto() {
+    document.getElementById('photo-card').style.display = "grid";
+
+}
+function home() {
+    window.location.href = "firstt.html";
+
+}
+
+
+

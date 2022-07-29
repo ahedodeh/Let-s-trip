@@ -32,7 +32,7 @@
         </a>
 
         <div class="icons">
-            <div class="fa fa-home" id="home-btn"></div>
+            <div class="fa fa-home" id="home-btn" onclick="home()"></div>
         </div>
 
     </header>
@@ -41,29 +41,35 @@
         <div class="info">
             <form>
                 <label for=""> User Name</label>
-                <input type="text" name="" id=""><br>
+                <input type="text" name="" id="" disabled><br>
                 <label for="">Your email</label>
-                <input type="email" name="" id=""><br>
-                <label for="">Your Age</label>
-                <input type="date" name="" id=""><br>
+                <input type="email" name="" id="" disabled><br>
+                <label for="">Your Birth Date</label>
+                <input type="date" name="" id="" disabled><br>
                 <label for="">Your Phone Number</label>
-                <input type="number" name="" id=""><br>
+                <input type="number" name="" id="" maxlength="10" minlength="10" disabled><br>
                 <button id="edit-profile">Edite your profile</button>
+                <button id="edit-profile2">save your editing</button>
             </form>
         </div>
+
         <div class="fes">
             <div class="f1">
                 <div class="profile-photo"></div>
             </div>
+            <button id="change-photo" onclick="apperCardPhoto()">Change your photo</button>
+
             <div class="f2"></div>
             <div class="f3"></div>
+
         </div>
     </div>
+
 
     <div class="all">
         <div class="done">
             <h1 class="heading"> Expired <span>trips</span> </h1>
-            <div class="bb" style="opacity: 0.8; position: relative; top: -100px;">
+            <div class="bb" style="opacity: 0.6; position: relative; top: -100px;">
 
                 <div class="card">
                     <div class="circle" style="--clr:#F79F1F">
@@ -118,6 +124,24 @@
                 </div>
 
             </div>
+
+        </div>
+    </div>
+
+
+
+    <!--create card-->
+    <div class="photo-card" id="photo-card">
+        <div class="p-card">
+            <h2> Have a new profile picture</h2>
+            <br><br>
+            <form action="">
+                <label for="userfiles">upload your photo</label><br><br>
+                <input type="file" name="userfiles" id="userfiles" accept="image/gif,image/jpeg,image/png"><br><br>
+                <button class="profile-x"> cancle</button>
+                <button class="profile-ok">ok</button>
+
+            </form>
 
         </div>
     </div>
