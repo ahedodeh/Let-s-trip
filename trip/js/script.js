@@ -6,20 +6,25 @@ document.querySelector('#menu-btn').onclick = () => {
     searchForm.classList.remove('active');
 }
 
-let loginForm = document.querySelector('.login-form')
+// let loginForm = document.querySelector('.login-form')
 
-document.querySelector('#login-btn').onclick = () => {
-    loginForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    searchForm.classList.remove('active');
-}
+// document.querySelector('#login-btn').onclick = () => {
+//     loginForm.classList.toggle('active');
+//     navbar.classList.remove('active');
+//     searchForm.classList.remove('active');
+// }
 
-let searchForm = document.querySelector('.search-form')
 
-document.querySelector('#search-btn').onclick = () => {
-    searchForm.classList.toggle('active');
-    navbar.classList.remove('active');
-    loginForm.classList.remove('active');
+document.querySelector('#social-btn').onclick = () => {
+    let f = false;
+    if (f == true) {
+        window.location.href = "sign.html";
+    }
+    else {
+        window.location.href = "social.html";
+
+    }
+
 }
 
 window.onscroll = () => {
@@ -54,8 +59,6 @@ var swiper = new Swiper(".review-slider", {
     },
 });
 
-
-
 const panels = document.querySelectorAll(".panel");
 
 panels.forEach((panel) => {
@@ -65,14 +68,11 @@ panels.forEach((panel) => {
     });
 });
 
-
 const removeActiveClasses = () => {
     panels.forEach((panel) => {
         panel.classList.remove("active");
     })
 }
-
-// -----------------------------------------------
 
 panels.forEach((panel) => {
     panel.addEventListener("mouseleave", () => {
@@ -86,9 +86,6 @@ const removeActiveClasses2 = () => {
         panel.classList.remove("active");
     })
 }
-
-
-
 
 
 
@@ -152,12 +149,17 @@ function clickForest() {
     document.getElementById('ice-d').style.display = "none";
 
 }
+
 function leave() {
     document.getElementById('forest-d').style.display = "none";
     document.getElementById('Mountain-d').style.display = "none";
     document.getElementById('sea-d').style.display = "none";
     document.getElementById('ice-d').style.display = "none";
 }
+
+
+
+
 
 function rev() {
     document.getElementById('rev1').style.position = "relative";
@@ -202,6 +204,11 @@ function f7() {
 function f8() {
     document.getElementById('m4').style.display = "none";
 }
+
+
+
+
+
 function thanks() {
     document.get('thanks').style.display = "grid";
 }
@@ -212,22 +219,6 @@ function ok() {
 function delt1() {
     document.get('delete-1').style.display = "block";
 }
-
-///////////////////////////////////////////////////////// to open social media page
-function social() {
-
-    // flage
-    let f = false;
-    if (f == true) {
-        window.location.href = "sign.html";
-    }
-    else {
-        window.location.href = "social.html";
-
-    }
-
-}
-///////////////////////////////////////////////////////// to open profile page
 function profile() {
 
     // flage
@@ -248,6 +239,15 @@ function home() {
     window.location.href = "firstt.html";
 
 }
-
-
-
+function openMountainPage() {
+    window.location.href = "mountain.html";
+}
+function openForestPage() {
+    window.location.href = "forest.html";
+}
+function openIceMountainPage() {
+    window.location.href = "ice-mountain.html";
+}
+function openSeaPage() {
+    window.location.href = "sea.html";
+}

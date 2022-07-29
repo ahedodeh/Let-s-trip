@@ -5,7 +5,8 @@
    <meta charset="UTF-8">
    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
    <meta http-equiv="X-UA-Compatible" content="ie-edge">
-   <title>Car</title>
+   <title>Let's Trip</title>
+   <link rel="icon" type="image/png" href="../images/logo-1.png">
    <link rel="stylesheet" href="../css/first-Stylr.css">
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
 
@@ -96,18 +97,18 @@
          <span style="--i:71;">.</span>
       </div>
       <div class="all">
-      <div class="contan">
-         <div class="bar">
-            <div class="fill">
+         <div class="contan">
+            <div class="bar">
+               <div class="fill">
+               </div>
+            </div>
+            <div class="counter">0%
             </div>
          </div>
-         <div class="counter">0%
-         </div>
-      </div>
-      <button class="output">
-         <!-- <span class="fa fa-check"></span> -->
-         <a href="firstt.html" class="pp">Start</a>
-      </button>
+         <button class="output">
+            <!-- <span class="fa fa-check"></span> -->
+            <a href="firstt.html" class="pp">Start</a>
+         </button>
       </div>
 
 
@@ -122,24 +123,24 @@
       let contan = document.querySelector(".contan");
       let output = document.querySelector(".output");
       let fill = document.querySelector(".fill");
-      
-         var a = 0;
-         var run = setInterval(frames, 80);
-         function frames() {
-            a = a + 1;
-            if (a == 101) {
-               clearInterval(run);
-               contan.style.display = "none";
-               output.style.display = "block";
-            }
-            else {
-               var counter = document.querySelector(".counter");
-               counter.textContent = a + "%";
-               fill.style.width = a + "%";
-            }
-         }
 
-   
+      var a = 0;
+      var run = setInterval(frames, 80);
+      function frames() {
+         a = a + 1;
+         if (a == 101) {
+            clearInterval(run);
+            contan.style.display = "none";
+            output.style.display = "block";
+         }
+         else {
+            var counter = document.querySelector(".counter");
+            counter.textContent = a + "%";
+            fill.style.width = a + "%";
+         }
+      }
+
+
    </script>
 </body>
 
