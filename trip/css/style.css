@@ -1098,7 +1098,7 @@ label:hover :checked+.flip-card {
 }
 
 .thanks .thank-card h2 {
-    font-size: 40px;
+    font-size: 30px;
     color: black;
 }
 
@@ -1109,14 +1109,14 @@ label:hover :checked+.flip-card {
 
 .btn-ok {
     width: 20%;
-    height: 20%;
+    height: 10%;
     border: 2px solid var(--orange);
     border-radius: 30px;
     padding: 2px;
     font-weight: 300;
-    font-size: 20px;
+    font-size: 15px;
     color: black;
-    background-color: #aaa;
+    background-color: rgb(231, 224, 224);
 }
 
 .services input{

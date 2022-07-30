@@ -11,7 +11,7 @@
     float: left;
     width: 700px;
     top: 100px;
-    height: 400px;
+    height: 350px;
     border: white 5px solid;
     border-radius: 50px;
     padding-top: 20px;
@@ -31,9 +31,10 @@
     top: 30px;
     left: 140px;
     width: 45%;
+    padding-top: 1px;
     display: inline-block;
-    height: 30px;
-    background-color: rgb(243, 214, 161);
+    height: 40px;
+    background-color: rgb(240, 194, 110);
     font-size: 15px;
     line-height: 20px;
     border-radius: 20px;
@@ -48,7 +49,7 @@
     left: 40px;
     width: 45%;
     display: inline-block;
-    height: 30px;
+    height: 40px;
     background-color: rgb(255, 255, 255);
     font-size: 13px;
     line-height: 20px;
@@ -67,7 +68,7 @@
     border-radius: 50px;
     border: #fff solid 2px;
     position: relative;
-    bottom: -120px;
+    bottom: -30px;
     left: 5%;
 
 }
@@ -81,7 +82,7 @@
     border-radius: 50px;
     border: #fff solid 2px;
     position: relative;
-    bottom: -120px;
+    bottom: -30px;
     right: -30%;
 
 }
@@ -120,21 +121,27 @@
     margin-bottom: 10px;
 }
 
-.info label:hover {
+.info input:hover {
     color: white;
     background-color: #F79F1F;
 }
 
 #edit-profile:hover {
+    position: relative;
     box-shadow: 0px 0px 15px #F79F1F;
+    bottom: -20px;
+    cursor: pointer;
 }
 
 #edit-profile2:hover {
+    position: relative;
     box-shadow: 0px 0px 15px #F79F1F;
+    cursor: pointer;
+    bottom: -20px;
 }
 
 .info:hover {
-    box-shadow: 0px 0px 60px #F79F1F;
+    box-shadow: 0px 0px 20px #F79F1F;
 }
 
 .info p {
@@ -154,16 +161,16 @@
 
 .f1 {
     position: relative;
-    top: 100px;
+    top: 140px;
     width: 300px;
     left: 70px;
     height: 300px;
-    background-color: F79F1F;
+    background-color: #f7a11fb4;
     border-radius: 100px 0;
     /* transform: rotate(10deg); */
     display: flex;
     animation-name: slideInLeft;
-    animation-duration: 1s;
+    animation-duration: 1.2s;
     animation-fill-mode: both;
     z-index: 70;
 }
@@ -174,11 +181,10 @@
     left: 7%;
     width: 220px;
     height: 220px;
-    border-radius: 100px 0;
+    border-radius: 50%;
     border: rgb(243, 115, 10) 4px solid;
     background-image: url(../images/profile-icon.png);
     background-size: cover;
-    cursor: pointer;
 }
 
 .f2 {
@@ -192,7 +198,7 @@
     top: -200px;
     left: 820px;
     animation-name: slideInLeft;
-    animation-duration: 0.5s;
+    animation-duration: 1s;
     animation-fill-mode: both;
 }
 
@@ -206,7 +212,7 @@
     transform: rotate(-10deg);
     top: -550px;
     animation-name: slideInLeft;
-    animation-duration: 0.1s;
+    animation-duration: 1.8s;
     animation-fill-mode: both;
     left: 770px;
     /* left: 10px; */
@@ -249,6 +255,7 @@
     background: rgb(255, 255, 255);
     color: black;
 }
+
 .photo-card {
     background: rgba(255, 255, 255, 0.5);
     width: 100vw;
@@ -271,9 +278,11 @@
     width: 50%;
     box-shadow: 0 0 1rem #F79F1F;
 }
-.p-card h2{
+
+.p-card h2 {
     font-size: 20px;
 }
+
 .p-card label {
     font-size: 15px;
 }
@@ -290,6 +299,7 @@
     color: black;
     background-color: rgb(255, 255, 255);
 }
+
 .profile-ok {
     position: relative;
     right: -150px;
@@ -302,4 +312,21 @@
     color: #000;
     background-color: #fff;
 
+}
+
+#change-pass {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+    background-color: #F79F1F;
+    border: 7px white double;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+}
+#change-pass:hover{
+    width: 120px;
+    height: 120px;
 }

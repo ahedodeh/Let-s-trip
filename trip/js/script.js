@@ -210,11 +210,16 @@ function f8() {
 
 
 function thanks() {
-    document.get('thanks').style.display = "grid";
+    document.getElementById('thanks').style.display = "grid";
 }
 function ok() {
     document.getElementById('thanks').style.display = "none";
 }
+
+
+
+
+
 
 function delt1() {
     document.get('delete-1').style.display = "block";
@@ -233,7 +238,6 @@ function profile() {
 }
 function apperCardPhoto() {
     document.getElementById('photo-card').style.display = "grid";
-
 }
 function home() {
     window.location.href = "firstt.html";
@@ -250,4 +254,8 @@ function openIceMountainPage() {
 }
 function openSeaPage() {
     window.location.href = "sea.html";
+}
+
+function apperChangPass() {
+    document.getElementById('pass-card').style.display = "grid";
 }
