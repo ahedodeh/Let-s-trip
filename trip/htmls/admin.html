@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
 
     <!-- custom css file cdn link  -->
-    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="stylesheet" href="../css/admin.css">
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
@@ -32,11 +32,196 @@
         </a>
 
         <div class="icons">
-            <div class="fa fa-home" id="home-btn" onclick="home()"></div>
+            <div onclick="home()"
+                style="width: 100px; border-radius: 30px; font-size: 15px; position: relative; left: -80px; height: 35px; top: 23px; ">
+                log out</div>
+            <div class="fas fa-bars" id="menu-btn" style="position: relative;top: -15px; left: 40px;"></div>
         </div>
+        <nav class="navbar">
+            <a href="#trips-info">Blogs Information</a>
+            <a href="#add-blogss">Add Blogs</a>
+            <a href="#edit-blogss">Edit Blogs</a>
+            <a href="#the-Massages">The Massages</a>
+
+        </nav>
 
     </header>
+    <section class="Blogs" id="trips-info">
+        <h1 class="heading"> Blogs <span>Information</span> </h1>
+    </section>
+    <div class="admain-trips">
+        <div class="one" style="text-align:center;" onclick="openTable()" ondblclick="closeTable()">
+            <span>Mountain</span>
+        </div>
+        <div class="two" style="text-align:center;" onclick="openTable()" ondblclick="closeTable()"><span
+                style="position:relative ; top:25px">Ice
+                Mountain</span></div>
+        <div class="three" style="text-align:center;" onclick="openTable()" ondblclick="closeTable()">
+            <span>Forest</span>
+        </div>
+        <div class="four" style="text-align:center;" onclick="openTable()" ondblclick="closeTable()"><span>Sea</span>
+        </div>
+    </div>
+    <!--  يفترض داينمك تيبل  -->
+    <div id="table">
+        <table id="tb" style="width: 100%; ">
+            <tr>
+                <th>Trip id</th>
+                <th>Trip Date</th>
+                <th>Trip price</th>
+                <th>Trip status</th>
+                <th>Visitor Name</th>
+            </tr>
 
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- ////////////////////////////////////////////////////////////////////////////// -->
+    <section class="Blogs" id="add-blogss">
+        <h1 class="heading"> add <span>Blogs</span> </h1>
+    </section>
+
+
+
+    <div class="add-bolgs" id="add-bolgs">
+
+        <div class="info">
+            <form>
+                <label for="Blog Type"> Choose the Type</label>
+                <select name="trip-type">
+                    <option value="1">Mountain</option>
+                    <option value="2">Ice Mountain</option>
+                    <option value="3">Sea</option>
+                    <option value="4">Forest</option>
+                </select>
+                <label for=""> Bloge id</label>
+                <input type="number" name="" id=""><br>
+                <label for=""> Bloge information</label>
+                <input type="text" name="" id=""><br>
+                <label for="">The Location</label>
+                <input type="text" name="" id=""><br>
+                <label for="">Sٍٍtarting date</label>
+                <input type="date" name="" id=""><br>
+                <label for="">End date</label>
+                <input type="date" name="" id=""><br>
+                <label for="">Departure Time</label>
+                <input type="time" name="" id=""><br>
+                <label for="">The Price</label>
+                <input type="date" name="" id=""><br>
+                <button id="edit-blogs2">Save your information</button>
+
+            </form>
+        </div>
+
+        <div>
+            <div class="ph-blog">
+            </div>
+            <button onclick="apperAdminPhoto() " id="edit-ph-blog">sve the photo</button>
+        </div>
+    </div>
+
+
+    <!-- ////////////////////////////////////////////////////////////////////////////////// -->
+
+
+    <section class="Blogs" id="edit-blogss">
+        <h1 class="heading"> Edit <span>Blogs</span> </h1>
+    </section>
+
+    <div class="admain-trips">
+        <div class="one" style="text-align:center;" onclick="openPlane()" ondblclick="closePlane()">
+            <span>Mountain</span>
+        </div>
+        <div class="two" style="text-align:center;" onclick="openPlane()" ondblclick="closePlane()"><span
+                style="position:relative ; top:25px">Ice
+                Mountain</span></div>
+        <div class="three" style="text-align:center;" onclick="openPlane()" ondblclick="closePlane()">
+            <span>Forest</span>
+        </div>
+        <div class="four" style="text-align:center;" onclick="openPlane()" ondblclick="closePlane()"><span>Sea</span>
+        </div>
+    </div>
+
+    <div class="edit-bolgs" id="edit-bolgs">
+        <div class="SS">
+            <form action="">
+                <input type="text" placeholder="Search by bolg id">
+                <button id="search_id">Search</button>
+
+            </form>
+        </div>
+        <div class="info">
+
+            <form>
+                <label for=""> Bloge information</label>
+                <input type="text" name="" id="" disabled><br>
+                <label for="">The Location</label>
+                <input type="text" name="" id="" disabled><br>
+                <label for="">Sٍٍtarting date</label>
+                <input type="date" name="" id="" disabled><br>
+                <label for="">End date</label>
+                <input type="date" name="" id="" disabled><br>
+                <label for="">Departure Time</label>
+                <input type="time" name="" id="" disabled><br>
+                <label for="">The Price</label>
+                <input type="date" name="" id="" disabled><br>
+                <button id="edit-blogs2">Save your editing</button>
+
+            </form>
+        </div>
+
+        <div>
+            <div class="ph-blog">
+            </div>
+            <button id="edit-ph-blog" onclick="apperAdminPhoto() ">Edit the photo</button>
+        </div>
+    </div>
+
+
+    <section class="Blogs" id="the-Massages">
+        <h1 class="heading"> The <span>Massages</span> </h1>
+    </section>
+    <div id="table2">
+        <table id="tb" style="width: 100%; ">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th style="width:50% ;">The content</th>
+            </tr>
+
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+
+            </tr>
+        </table>
+    </div>
+
+
+
+    <div class="photo-card" id="admin-photo-card">
+        <div class="p-card">
+            <br><br>
+            <form action="">
+                <label for="userfiles">upload your photo</label><br><br>
+                <input type="file" name="userfiles" id="userfiles" accept="image/gif,image/jpeg,image/png"><br><br>
+                <button class="admin-x"> cancle</button>
+                <button class="admin-ok">ok</button>
+
+            </form>
+
+        </div>
+    </div>
+
+    <script src="../js/admin.js"></script>
     <script src="../js/script.js"></script>
 
 </body>

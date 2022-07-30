@@ -1,0 +1,268 @@
+.admain-trips {
+    margin-left: 170px;
+    margin-top: 20px;
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.admain-trips div {
+    float: left;
+    height: 100px;
+    margin: 70px;
+    width: 100px;
+    padding: 0 10px;
+    background-color: rgb(240, 194, 110);
+    border-radius: 50%;
+    border: #fff solid 3px;
+}
+
+.admain-trips span {
+    font-size: 15px;
+    position: relative;
+    top: 35%;
+    font-weight: 600;
+    text-align: center;
+}
+
+.admain-trips div:hover {
+    color: white;
+    background-color: #F79F1F;
+}
+
+
+#tb td,
+#tb th {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#tb {}
+
+#tb tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#tb th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    background-color: #e69b2b;
+    color: white;
+}
+
+#table {
+    position: relative;
+    left: 100px;
+    width: 80%;
+    display: none;
+}
+
+#table2 {
+    position: relative;
+    top: 180px;
+    left: 100px;
+    width: 80%;
+}
+
+.edit-bolgs {
+    border: white 5px solid;
+    border-radius: 50px;
+    width: 80%;
+    position: relative;
+    left: 100px;
+    height: 500px;
+    display: none;
+}
+
+.add-bolgs {
+    border: white 5px solid;
+    border-radius: 50px;
+    width: 80%;
+    top: 70px;
+    position: relative;
+    left: 100px;
+    height: 600px;
+}
+
+.info {
+    position: relative;
+    left: 50px;
+    float: left;
+    width: 500px;
+    height: 500px;
+    padding-top: 20px;
+    padding-left: 30px;
+
+}
+
+.SS {
+    position: relative;
+    float: left;
+    width: 100%;
+    top: 10px;
+    left: 40%;
+
+}
+
+.SS input {
+    margin-left: 10px;
+    height: 30px;
+    font-size: 12px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+#search_id {
+    font-size: 15px;
+    font-weight: 500;
+    border-bottom: #e69b2b 2px solid;
+}
+
+.info label {
+    position: relative;
+    top: 30px;
+    left: 140px;
+    width: 45%;
+    padding-top: 1px;
+    display: inline-block;
+    height: 40px;
+    background-color: rgb(240, 194, 110);
+    font-size: 15px;
+    line-height: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+.info input,
+.info select {
+    position: relative;
+    top: 30px;
+    width: 45%;
+    display: inline-block;
+    height: 40px;
+    background-color: rgb(255, 255, 255);
+    font-size: 13px;
+    line-height: 20px;
+    border-radius: 20px;
+    font-weight: 600;
+    padding: 0px 10px;
+    margin-bottom: 10px;
+}
+
+#edit-blogs {
+    color: rgb(12, 9, 9);
+    background-color: #f3b75d;
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    border: #fff solid 2px;
+    position: relative;
+    bottom: -30px;
+    left: 5%;
+
+}
+
+#edit-blogs2 {
+    color: rgb(14, 11, 11);
+    background-color: #f5bc66;
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    border: #fff solid 2px;
+    position: relative;
+    bottom: -30px;
+    right: -20%;
+
+}
+
+.ph-blog {
+    position: relative;
+    left: 700px;
+    top: 100px;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: #F79F1F 2px solid;
+    outline: #ffffff 2px solid;
+    background: url(../images/ice-2.png);
+    background-size: cover;
+}
+
+#edit-ph-blog {
+    color: rgb(14, 11, 11);
+    background-color: #f5bc66;
+    display: inline-block;
+    width: 170px;
+    height: 40px;
+    border-radius: 50px;
+    border: #fff solid 2px;
+    position: relative;
+    bottom: -120px;
+    right: -20%;
+
+}
+
+.photo-card {
+    background: rgba(255, 255, 255, 0.5);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 0.9rem;
+    display: none;
+}
+
+.admin-x {
+    position: relative;
+    left: -150px;
+    width: 20%;
+    height: 20%;
+    border: 2px solid #F79F1F;
+    border-radius: 30px;
+    padding: 2px;
+    font-weight: 300;
+    color: black;
+    background-color: rgb(255, 255, 255);
+}
+
+.admin-ok {
+    position: relative;
+    right: -150px;
+    width: 20%;
+    height: 20%;
+    border: 2px solid #F79F1F;
+    border-radius: 30px;
+    padding: 2px;
+    font-weight: 300;
+    color: #000;
+    background-color: #fff;
+
+}
+
+.photo-card .p-card {
+    background: white;
+    padding: 3rem;
+    border-radius: 50px;
+    width: 50%;
+    box-shadow: 0 0 1rem #F79F1F;
+}
+
+.p-card h2 {
+    font-size: 20px;
+}
+
+.p-card label {
+    font-size: 15px;
+}
